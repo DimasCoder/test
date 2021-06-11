@@ -1,0 +1,259 @@
+.filtered-catalog__inner{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 18px;
+}
+
+.catalog-filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter{
+    padding-top: 6px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #707070;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.filter p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
+.filter .filter-label{
+    display: none;
+}
+
+#filter-checkbox{
+    display: none;
+}
+.check-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.check-container label{
+    margin: 5px 0 5px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.check-container input{
+    width: 20px;
+    margin: auto 0;
+}
+
+.filtered-catalog{
+    width: 75%;
+}
+
+.carousel-filter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2px;
+}
+
+.filter-carousel-text{
+    width: 171px;
+    display: inline-block;
+    padding-right: 28px;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.filter-carousel-text article{
+    font-size: 24px!important;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: end;
+    color: #959595;
+    line-height: 25px;
+}
+
+.filter-carousel-text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: end;
+    color: #959595;
+    line-height: 18px;
+    padding-top: 30px;
+}
+
+.sort-container{
+    display: flex;
+    padding: 14px 0;
+    border-bottom: 1px solid #E6E6E6;
+    justify-content: space-between;
+}
+
+.sort-container p{
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #707070;
+    margin: auto 0;
+}
+
+.sort-container .select{
+    width: 35%;
+}
+
+.sort-container label{
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #707070;
+    margin: auto 10px auto 0;
+}
+
+.sort-container select{
+    padding: 2px;
+}
+
+.select{
+    min-width: 250px;
+
+}
+
+.select select{
+    min-width: 100px!important;
+}
+
+.sort-container .select::before {
+    content: "\2228";
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    padding: 1px 8px 1px 8px;
+    color: #ffffff;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #4bb0f5;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.filtered-catalog-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.no-filter{
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+    text-align: center;
+    padding: 100px;
+}
+
+@media all and (max-width: 1000px) {
+    .filter h4{
+        font-size: 14px;
+    }
+    .check-container label{
+        font-size: 17px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .filtered-catalog__inner{
+        flex-direction: column;
+    }
+
+    .filter{
+        width: 100%;
+    }
+
+    .filter .filter-label{
+        display: block;
+    }
+
+    .filter__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.8s ease-out;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    #filter-checkbox{
+        display: none;
+    }
+
+
+    .checkbox-filter{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter p{
+        padding: 0 30px;
+    }
+
+    .price-slider-container{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .carousel-filter{
+        display: none;
+    }
+
+    .filtered-catalog{
+        width: 100%;
+    }
+
+
+
+    #filter-checkbox:checked ~ .filter__inner{
+        max-height: 620px;
+        overflow: no-content;
+    }
+
+    .sort-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sort-container p{
+        margin-bottom: 10px;
+    }
+
+
+
+    .filter-label{
+        width: 70px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        padding: 8px 70px;
+        background-color: #4bb0f5;
+        color: #FFFFFF;
+        margin: auto;
+    }
+
+}

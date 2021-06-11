@@ -1,0 +1,111 @@
+.side-drawer{
+    height: 100%;
+    background-color: #FFFFFF;
+    width: 70%;
+    max-width: 450px;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transform: translateX(-100%);
+    transition: linear 0.3s;
+}
+
+.side-drawer.open{
+    transform: translateX(0);
+}
+
+.side-drawer__inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.side-drawer__logo{
+    display: flex;
+}
+.side-drawer__logo-image{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.side-drawer__navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.side-drawer__navigation-link{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #838383;
+    transition: 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, serif;
+    height: 100%;
+    line-height: 37px;
+    padding: 10px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.side-drawer__navigation-link + .side-drawer__navigation-link{
+}
+
+
+.side-drawer__contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.side-drawer__contact a{
+    color: #838383;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-drawer-social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.side-drawer-social a{
+    font-size: 15px;
+    color: #838383;
+    transition: linear 0.3s;
+    height: 40px;
+    width: 40px;
+    background-color: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-drawer-social a:hover{
+    color: #4bb0f5;
+    transition: linear 0.3s;
+}
+
+@media all and (max-height: 737px) {
+    .side-drawer__navigation-link{
+        padding: 3px;
+        line-height: 30px;
+    }
+}
+

@@ -1,0 +1,49 @@
+.admin-data-card{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F9F9F9;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    transition: all 0.3s;
+    justify-content: space-between;
+}
+
+.admin-data-card:hover{
+    background-color: #ddd;
+    transition: all 0.3s;
+}
+
+.admin-data-image{
+    display: flex;
+}
+
+.admin-data-image img{
+    width: 40px;
+    margin: auto 0;
+}
+
+.admin-data-card label{
+    margin: auto 0;
+}
+
+.admin-data-remove{
+    margin: auto 0;
+    width: 30px;
+
+}
+
+
+.admin-data-remove input{
+    width: 30px;
+    background-color: #1f1f1d;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 4px 0;
+}
+
+.admin-data-remove input:hover{
+    cursor: pointer;
+    background-color: #495057;
+}

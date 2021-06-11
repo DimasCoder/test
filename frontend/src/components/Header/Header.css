@@ -1,0 +1,249 @@
+.header{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 35px;
+}
+
+
+.header__inner{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.logo-link{
+    width: 7%;
+}
+
+.logo-link-adaptive{
+
+}
+
+.header__inner-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.header__inner-logo-adaptive{
+    display: none;
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 10px;
+    width: 40%;
+}
+
+.header__navigation-link{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    transition: 0.25s linear;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__navigation-link:hover{
+    color: #B39B5B;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 0;
+}
+
+.search-icon{
+    margin: auto 0;
+    width: 19px!important;
+    height: 18px!important;
+    background-color: #fff;
+    padding: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-right: 1px solid rgba(0,0,0,0.25);
+    transition: 0.3s linear;
+    border-left: none;
+}
+
+
+.input-search{
+    width: 90%;
+    height: 32px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    padding: 0 0 0 12px;
+    margin: auto 0;
+}
+
+.input-search:focus{
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.input-search:focus ~ .search-icon{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.input-search:focus.search-icon{
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+}
+
+.header-info{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.time-table span{
+    font-size: 14px;
+    font-family: Arial, serif;
+    font-weight: 300;
+    color: #838383;
+}
+
+.novelty-container{
+    display: flex;
+    align-items: center;
+}
+
+.novelty-link{
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, serif;
+    background-color: #4bb0f5;
+}
+
+.novelty-link:hover{
+    background-color: #3282b8;
+}
+
+.header__inner-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.header__inner-contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__inner-contact span{
+    color: #B39B5B;
+}
+
+.header__inner-toggle{
+    display: none;
+}
+
+.shopping-cart-icon{
+    margin: auto 0;
+}
+
+.shopping-cart-icon:hover{
+    cursor: pointer;
+}
+
+.shopping-cart-icon p{
+    color: #fff;
+}
+@media all and (max-width: 1300px) {
+    .header-navigation{
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .header__inner-logo{
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+
+@media all and (max-width: 1100px) {
+    .container{
+        width: 95%;
+    }
+
+    .header-info{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .header-navigation{
+        display: none !important;
+    }
+
+    .header__inner-contact{
+        display: none;
+    }
+
+    .header__inner-toggle{
+        display: flex;
+        margin: auto 0;
+    }
+
+    .search-container{
+        display: flex;
+        width: 55%;
+    }
+
+    .header-info{
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .logo-link {
+        display: none;
+    }
+    .header__inner-logo-adaptive{
+        display: block;
+        width: 45px;
+    }
+
+    .search-container{
+        width: 60%;
+    }
+}

@@ -1,0 +1,134 @@
+.door-card-container{
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4px 0px 10px 0px !important;
+    padding: 5px;
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.door-card-container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.door-logo{
+    width: 100%;
+    height: 180px;
+    padding: 1px;
+}
+
+.door-card-container h3{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #5b5b5b;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+}
+
+.door-card-footer span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4bb0f5;
+    font-family: Arial, sans-serif;
+    margin: auto 0;
+}
+
+.door-card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.availability{
+    margin: auto 0;
+    font-weight: 100;
+}
+
+.door-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.door-card-header p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #838383;
+}
+
+.span-available{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #00ac00;
+}
+
+.span-unavailable{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #cf0000;
+}
+
+.to-cart{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border: 0;
+    padding: 6px 8px;
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #fff !important;
+    background-color: #4bb0f5;
+    transition: .5s;
+}
+
+.to-cart:hover{
+    box-shadow: 0 0 0 0 rgba(236, 143, 3, 0);
+    background-position: 0 0;
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #545454;
+}
+
+@media all and (max-width: 450px) {
+    .door-card-container {
+        margin: 10px auto;
+    }
+
+    .door-card-container{
+        width: 170px;
+    }
+
+    .door-card-container h3{
+        font-size: 14px;
+    }
+
+    .door-card-footer span{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .door-card-container{
+        width: 155px;
+    }
+
+    .door-card-footer span{
+        font-size: 14px;
+    }
+}

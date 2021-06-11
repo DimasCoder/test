@@ -1,0 +1,77 @@
+.search-section-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.search-section-container .search-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.search-section-container .search-icon{
+    margin: auto 0;
+    width: 20px!important;
+    height: 20px!important;
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+.search-section-container .input-search{
+    width: 100%;
+    margin: auto 0;
+    transition: all 0.3s;
+    font-size: 16px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.search-section-container .input-search:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-search:focus.search-icon{
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.mercedes-image{
+    position: absolute;
+    right: 4%;
+    top: 14%;
+    width: 21%;
+    min-width: 170px;
+    transform: scaleX(-1);
+}
+
+@media all and (max-width: 700px){
+    .mercedes-image{
+        right: 10px;
+        top: 80px;
+    }
+}
+
+@media all and (max-width: 550px){
+    .search-section-container .search-container{
+        width: 100%;
+    }
+}

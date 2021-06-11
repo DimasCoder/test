@@ -1,0 +1,30 @@
+.main-container{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-container{
+    width: 100%;
+}
+
+.bottom-container{
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .side-container{
+        width: 100%;
+    }
+
+    .center-container{
+        width: 100%;
+    }
+
+}

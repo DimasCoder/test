@@ -1,0 +1,390 @@
+.door-info-page{
+    margin-top: 30px;
+}
+
+.door-info-page__inner{
+    padding: 28px 18px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.door-info-left{
+    width: 80%;
+}
+
+.door-info-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.door-image-container{
+    width: 40%;
+    align-items: center;
+}
+
+.door-image{
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.door-main-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.door-main-info h2{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 36px;
+    font-family: Arial, sans-serif;
+    color: #707070;
+}
+
+.availability-container{
+    padding: 3px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.available{
+    border: 2px solid #00dd00;
+    border-radius: 3px;
+    color: #00dd00;
+}
+
+.available span{
+    font-size: 14px!important;
+    color: #00dd00!important;
+}
+
+.unavailable{
+    border: 2px solid #dd8500;
+    border-radius: 3px;
+    color: #DD8500;
+}
+
+.unavailable span{
+    font-size: 14px!important;
+    color: #DD8500!important;
+}
+
+
+.door-main-info p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    font-family: Arial, sans-serif;
+    color: #959595;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+    width: 60%;
+}
+
+.door-main-info label{
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #707070;
+}
+
+.select{
+    position: relative;
+    width: 60%;
+    display: flex;
+}
+
+.select select{
+    width: 100%;
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    padding: 6px;
+    color: #838383;
+}
+
+.select::before {
+    content: "\2228";
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    padding: 3px 8px 5px 8px;
+    color: #ffffff;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #4bb0f5;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.select option{
+    padding: 40px;
+}
+
+.door-main-info span{
+    color: #4bb0f5;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+}
+
+.previously-viewed{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.previously-viewed p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.door-info-bottom{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tab-button{
+    padding: 10px 22px;
+    background-color: #f2fafa;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: none;
+}
+
+.tab-button:hover{
+    cursor: pointer;
+
+}
+
+.active-button{
+    border: 2px solid #4bb0f5;
+    padding: 8px 20px;
+    color: #4bb0f5;
+
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs{
+    padding: 20px 0;
+}
+
+.tab{
+    padding: 10px 22px;
+    background-color: #f2fafa;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+.panels{
+    background:#fffffff6;
+    min-height:200px;
+    width:98%;
+    border-radius:3px;
+    overflow:hidden;
+    padding: 20px 0;
+}
+.panel{
+    display:none;
+    animation: fadein .8s;
+}
+
+.panel h6{
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #707070;
+}
+
+.panel p{
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #707070;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+    font-size:17px;
+    font-weight:600;
+    color: #5d5d5d;
+    padding-bottom: 20px;
+}
+.radio{
+    display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel{
+    display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab{
+    border: 2px solid #4bb0f5;
+    padding: 8px 20px;
+    color: #4bb0f5;
+}
+
+
+.char-table{
+    width: 100%;
+}
+
+.char-table td{
+    width: 50%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #707070;
+    padding: 7px 15px;
+}
+
+.char-table tr:nth-child(2n){
+    background-color: #FCFBFB;
+}
+
+.similar-products-text{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #707070;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.similar-products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-not-found{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-not-found img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.page-not-found h4{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 800;
+    color: #4bb0f5;
+}
+
+.page-not-found p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #707070;
+    margin-top: 20px;
+}
+
+.page-not-found a{
+    text-decoration: none;
+    color: #4bb0f5;
+    border-bottom: 2px solid #4bb0f5;
+}
+
+
+@media all and (max-width: 1000px) {
+    .door-main-info p {
+        width: 70%;
+    }
+
+    .select{
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .door-main-info h2 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .door-main-info p {
+        width: 90%;
+    }
+
+    .select{
+        width: 90%;
+    }
+
+    .door-info-left{
+        width: 100%;
+    }
+
+    .previously-viewed{
+        display: none;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .door-info-top{
+        flex-direction: column;
+    }
+
+    .door-image-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .door-main-info{
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .tab{
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+}
+
+
+
+
+

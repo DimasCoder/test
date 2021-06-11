@@ -1,0 +1,40 @@
+.add-brand-group{
+    margin: 15px 0;
+}
+
+.review-form-input{
+    margin-bottom: 15px;
+}
+
+.review-form-input:focus{
+}
+
+.review-form-textarea{
+    width: 60%;
+    height: 200px;
+}
+
+.btn-send-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-send{
+    width: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border: 3px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: #fff !important;
+    background-color: #4bb0f5;
+    transition: .5s;
+    margin: auto 0;
+}
+

@@ -1,0 +1,129 @@
+.catalog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 18px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #FFFFFF;
+
+}
+
+.catalog-container h2{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: Arial, sans-serif;
+    color: #707070;
+}
+
+.catalog{
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-doors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*column-gap: 3.296%;*/
+    flex-wrap: wrap;
+    margin: 15px 0 0 0;
+}
+
+.additional-info{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info h3{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: #838383;
+    padding-bottom: 10px;
+}
+
+.additional-info a{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #838383;
+    padding: 10px 0;
+}
+
+.additional-info p{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    color: #838383;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.subscribe-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a5a5a5;
+    border-radius: 3px;
+    background-color: #F8F8F8;
+}
+
+.subscribe-container .subscribe-icon{
+    color: #9f9f9f;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subscribe-container h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #9f9f9f;
+    text-align: center;
+}
+
+
+.subscribe-container p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #9f9f9f;
+    text-align: center;
+}
+
+.subscribe-container input{
+    width: 75%;
+    padding: 5px 10px;
+}
+
+@media all and (max-width: 650px) {
+    .catalog-container {
+        flex-direction: column;
+        padding: 28px 9px;
+    }
+
+    .catalog{
+        width: 100%;
+    }
+
+    .additional-info{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .catalog-container{
+        padding: 18px 5px;
+    }
+}
